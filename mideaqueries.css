@@ -1,0 +1,89 @@
+@media screen and (min-width: 992px) {
+  .drawer {
+    display: none;
+  }
+  section {
+    min-height: 100vh;
+    padding: 10px 180px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+  section {
+    padding: 50px 50px;
+  }
+  .contact .contact_details {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 993px) and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  section {
+    padding: 50px 80px;
+  }
+  .contact .contact_details {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .vertical_tabs {
+    display: none;
+  }
+  .ser_main_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .tab_select {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none;
+  }
+  section {
+    padding: 50px 20px;
+  }
+  .details {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact .contact_details {
+    width: 100%;
+  }
+  .form_box {
+    flex-direction: column;
+  }
+  .hero .user_image .box {
+    width: 250px;
+    height: 320px;
+  }
+  .info {
+    text-align: center;
+  }
+  .typewrite_txt {
+    justify-content: center;
+  }
+  * {
+    --fs-xxl: 4rem;
+    --fs-xl: 2.2rem;
+    --fs-l: 1.5rem;
+    --fs-m-l: 1.2rem;
+    --fs-m: 0.9rem;
+    --fs-s: 0.85rem;
+  }
+  .portfolio .carousel .prjt_img {
+    padding: 20px;
+  }
+}
