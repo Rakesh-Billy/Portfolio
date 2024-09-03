@@ -158,3 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(el);
   });
 });
+
+const tooltips = document.querySelectorAll('.tt')
+tooltips.forEach(t =>{
+    new bootstrap.Tooltip(t)
+})
