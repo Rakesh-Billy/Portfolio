@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
   }
+  .divider{
+    padding: 0px 180px;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 576px) {
   .sidebar {
@@ -15,6 +18,9 @@
   }
   section {
     padding: 50px 50px;
+  }
+  .divider{
+    padding: 0px 50px;
   }
   .contact .contact_details {
     width: 100%;
@@ -24,6 +30,9 @@
 @media screen and (max-width: 993px) and (min-width: 768px) {
   .sidebar {
     display: none;
+  }
+  .divider{
+    padding: 0px 80px;
   }
   section {
     padding: 50px 80px;
@@ -55,6 +64,9 @@
   section {
     padding: 50px 20px;
   }
+  .divider{
+    padding: 0px 20px;
+  }
   .details {
     flex-direction: column;
     gap: 15px;
@@ -67,13 +79,19 @@
   }
   .hero .user_image .box {
     width: 250px;
-    height: 320px;
   }
   .info {
     text-align: center;
   }
   .typewrite_txt {
     justify-content: center;
+  }
+  .role_col{
+
+    gap: 10px;
+  }
+  .portfolio .carousel .prjt_img {
+    height: 200px;
   }
   * {
     --fs-xxl: 4rem;
