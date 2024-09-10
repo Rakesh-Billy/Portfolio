@@ -79,19 +79,39 @@
   }
   .hero .user_image .box {
     width: 250px;
+    padding: 15px;
+
   }
   .info {
     text-align: center;
+    gap: 10px;
   }
   .typewrite_txt {
     justify-content: center;
   }
   .role_col{
-
     gap: 10px;
   }
   .portfolio .carousel .prjt_img {
     height: 200px;
+  }
+  .skills_container {
+    gap: 10px;
+  }
+  .skills_tab .skill_box {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+
+  }
+  .Education .edu_box {
+    width: 100%;
+  }
+  .service_box {
+    gap: 5px;
+  }
+  .resume{
+    margin-top: 30px;
   }
   * {
     --fs-xxl: 4rem;
@@ -102,6 +122,6 @@
     --fs-s: 0.85rem;
   }
   .portfolio .carousel .prjt_img {
-    padding: 20px;
+    /* padding: 20px; */
   }
 }

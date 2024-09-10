@@ -127,7 +127,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 10;
+    var revealpoint = 1;
     if (revealtop < windowheight - revealpoint) {
       reveals[i].classList.add("active");
     }
@@ -139,6 +139,50 @@ function reveal() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const revealElements = document.querySelectorAll(".reveal_home");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // Stop observing once the animation is triggered
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Trigger when 10% of the element is in view
+    }
+  );
+
+  revealElements.forEach((el) => {
+    observer.observe(el);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const revealElements = document.querySelectorAll(".reveal_home2");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // Stop observing once the animation is triggered
+        }
+      });
+    },
+    {
+      threshold: 0.1, // Trigger when 10% of the element is in view
+    }
+  );
+
+  revealElements.forEach((el) => {
+    observer.observe(el);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const revealElements = document.querySelectorAll(".reveal_home3");
 
   const observer = new IntersectionObserver(
     (entries, observer) => {
